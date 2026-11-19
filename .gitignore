@@ -1,0 +1,14 @@
+# Local dbt profile and database
+profiles.yml
+*.duckdb
+*.wal
+
+# dbt generated files
+target/
+dbt_packages/
+logs/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
