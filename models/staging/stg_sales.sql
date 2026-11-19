@@ -1,7 +1,7 @@
 with source as (
 
     select *
-    from {{ source('sales_data', 'raw_sales') }}
+    from read_parquet('{{ env_var("SALES_PARQUET_PATH") }}')
 
 ),
 
